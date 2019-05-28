@@ -18,7 +18,7 @@ class DetallesTableSeeder extends Seeder
             for ($i=1; $i<=$compra->cantidad; $i++) {
                 \App\Models\DetalleCompra::create([
                     'compra_id' => $compra->id,
-                    'nombre' => rand(1,50),
+                    'nombre' => 'Detalle ' . rand(1,50),
                     'precio' => rand(100, 10000),
                     'categoria_id' => $categorias->random()->id,
                 ]);

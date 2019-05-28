@@ -14,3 +14,6 @@
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::get('/compras', 'CompraController@index')->name('compras.index');
+Route::get('/compras-orden', 'CompraController@orden')->name('compras.orden');
+
+Route::get('/pelicula/{genero}', 'PeliculaController')->name('pelicula');

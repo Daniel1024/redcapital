@@ -9,6 +9,8 @@
 
                 <div class="card-body">
                     <a class="btn btn-info" href="{{ route('compras.index') }}">Compras con sus detalles</a>
+                    <a class="btn btn-info" href="{{ route('compras.orden') }}">Compras con categoría ordenada</a>
+                    <a class="btn btn-light" href="{{ route('pelicula', 'drama') }}">Peliculas</a>
                 </div>
             </div>
         </div>
