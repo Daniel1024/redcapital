@@ -11,4 +11,6 @@
 |
 */
 
-Route::get('/', 'CategoriaController@index');
+Route::get('/', 'HomeController@index')->name('home');
+
+Route::get('/compras', 'CompraController@index')->name('compras.index');
